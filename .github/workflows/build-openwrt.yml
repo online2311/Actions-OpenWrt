@@ -73,7 +73,7 @@ jobs:
         CONFIG_FILE: 'p2w_r619ac-128m.config'
         DIY_SH: 'diy.sh'
       run: |
-        [ -e files ] && mv files openwrt/files
+        [ -e lean ] && mv -f lean openwrt/package/lean
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_SH
         cd openwrt
