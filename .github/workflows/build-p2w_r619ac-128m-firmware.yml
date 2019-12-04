@@ -99,5 +99,5 @@ jobs:
     - name : Upload targets
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt firmware
+        name: p2w_r619ac-128m-firmware
         path: openwrt/bin/targets

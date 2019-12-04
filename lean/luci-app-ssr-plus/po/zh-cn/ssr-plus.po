@@ -2,7 +2,7 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 msgid "ShadowSocksR Client"
-msgstr "ShadowSocksR 客户端"
+msgstr "链路优化服务 客户端"
 
 msgid "Enable"
 msgstr "启用"
@@ -14,10 +14,10 @@ msgid "Log"
 msgstr "日志"
 
 msgid "ShadowSocksR is running"
-msgstr "ShadowSocksR 客户端运行中"
+msgstr "链路优化服务运行中"
 
 msgid "ShadowSocksR is not running"
-msgstr "ShadowSocksR 客户端未运行"
+msgstr "链路优化服务未运行"
 
 msgid "Global Setting"
 msgstr "全局设置"
@@ -26,7 +26,7 @@ msgid "Global Server"
 msgstr "全局服务器"
 
 msgid "ShadowSocksR SOCK5 Proxy is running"
-msgstr "ShadowSocksR SOCK5代理运行中"
+msgstr "链路优化服务SOCK5代理运行中"
 
 msgid "UDP Relay Server"
 msgstr "UDP中继服务器"
@@ -122,13 +122,13 @@ msgid "SSR Server"
 msgstr "服务端"
 
 msgid "ShadowSocksR Server"
-msgstr "ShadowSocksR 服务端"
+msgstr "链路优化 服务端"
 
 msgid "ShadowSocksR Server is running"
-msgstr "ShadowSocksR 服务端运行中"
+msgstr "链路优化 服务端运行中"
 
 msgid "ShadowSocksR Server is not running"
-msgstr "ShadowSocksR 服务端未运行"
+msgstr "链路优化 服务端未运行"
 
 msgid "Enable Server"
 msgstr "启动服务端"
@@ -377,8 +377,11 @@ msgstr "通过代理更新"
 msgid "GFW List"
 msgstr "GFW列表"
 
+msgid "ShadowSocksR Plus+"
+msgstr "链路优化"
+
 msgid "ShadowSocksR Plus+ Settings"
-msgstr "ShadowSocksR Plus+ 设置（支持SS/SSR/V2RAY）"
+msgstr "链路优化设置"
 
 msgid "Main Server"
 msgstr "主服务器"
@@ -399,7 +402,7 @@ msgid "Auto Update Server subscription, GFW list and CHN route"
 msgstr "自动更新服务器订阅、GFW列表和 CHN路由表"
 
 msgid "Subscribe URL"
-msgstr "SS/SSR/V2RAY订阅URL地址"
+msgstr "订阅URL地址"
 
 msgid "Update"
 msgstr "更新"
@@ -447,7 +450,7 @@ msgid "Please refer to the following writing"
 msgstr "每行一个域名，无需写前面的 HTTP(S):// ，提交后即时生效"
 
 msgid "Servers subscription and manage"
-msgstr "服务器节点订阅与管理（支持订阅和手动导入SSR链接）"
+msgstr "服务器节点订阅与管理"
 
 msgid "Through proxy update list, Not Recommended"
 msgstr "通过路由器自身代理更新订阅"
@@ -513,10 +516,10 @@ msgid "Ping Latency"
 msgstr "Ping延迟"
 
 msgid "Bypass Domain List"
-msgstr "不走代理的域名"
+msgstr "域名白名单"
 
 msgid "Black Domain List"
-msgstr "强制走代理的域名"
+msgstr "域名黑名单"
 
 msgid "Update Subscribe List"
 msgstr "更新订阅URL列表"

@@ -99,5 +99,5 @@ jobs:
     - name : Upload targets
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt firmware
+        name: gl-ar750-firmware
         path: openwrt/bin/targets

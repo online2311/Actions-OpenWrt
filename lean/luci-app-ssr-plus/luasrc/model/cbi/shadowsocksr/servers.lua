@@ -67,21 +67,16 @@ end
 -- [[ Servers Manage ]]--
 s = m:section(TypedSection, "servers")
 s.anonymous = true
-s.addremove = true
+s.addremove = false
 s.sortable = false
 s.template = "cbi/tblsection"
-s.extedit = luci.dispatcher.build_url("admin/services/shadowsocksr/servers/%s")
+-- s.extedit = luci.dispatcher.build_url("admin/services/shadowsocksr/servers/%s")
 function s.create(...)
 	local sid = TypedSection.create(...)
 	if sid then
 		luci.http.redirect(s.extedit % sid)
 		return
 	end
-end
-
-o = s:option(DummyValue, "type", translate("Type"))
-function o.cfgvalue(...)
-	return Value.cfgvalue(...) or translate("")
 end
 
 o = s:option(DummyValue, "alias", translate("Alias"))

@@ -79,11 +79,6 @@ local protocol = {
 	"auth_aes128_sha1",
 	"auth_aes128_md5",
 	"auth_chain_a",
-	"auth_chain_b",
-	"auth_chain_c",
-	"auth_chain_d",
-	"auth_chain_e",
-	"auth_chain_f",
 }
 
 obfs = {
@@ -114,20 +109,20 @@ s = m:section(NamedSection, sid, "servers")
 s.anonymous = true
 s.addremove   = false
 
-o = s:option(DummyValue,"ssr_url","SS/SSR/V2RAY URL") 
-o.rawhtml  = true
-o.template = "shadowsocksr/ssrurl"
-o.value =sid
+-- o = s:option(DummyValue,"ssr_url","SS/SSR/V2RAY URL") 
+-- o.rawhtml  = true
+-- o.template = "shadowsocksr/ssrurl"
+-- o.value =sid
 
-o = s:option(ListValue, "type", translate("Server Node Type"))
-o:value("ssr", translate("ShadowsocksR"))
-if nixio.fs.access("/usr/bin/ss-redir") then
-o:value("ss", translate("Shadowsocks New Version"))
-end
-if nixio.fs.access("/usr/bin/v2ray/v2ray") then
-o:value("v2ray", translate("V2Ray"))
-end
-o.description = translate("Using incorrect encryption mothod may causes service fail to start")
+-- o = s:option(ListValue, "type", translate("Server Node Type"))
+-- o:value("ssr", translate("ShadowsocksR"))
+-- if nixio.fs.access("/usr/bin/ss-redir") then
+-- o:value("ss", translate("Shadowsocks New Version"))
+-- end
+-- if nixio.fs.access("/usr/bin/v2ray/v2ray") then
+-- o:value("v2ray", translate("V2Ray"))
+-- end
+-- o.description = translate("Using incorrect encryption mothod may causes service fail to start")
 
 o = s:option(Value, "alias", translate("Alias(optional)"))
 
@@ -144,11 +139,11 @@ o.rmempty = false
 -- o.default = 60
 -- o.rmempty = false
 
-o = s:option(Value, "password", translate("Password"))
-o.password = true
-o.rmempty = true
-o:depends("type", "ssr")
-o:depends("type", "ss")
+-- o = s:option(Value, "password", translate("Password"))
+-- o.password = true
+-- o.rmempty = true
+-- o:depends("type", "ssr")
+-- o:depends("type", "ss")
 
 o = s:option(ListValue, "encrypt_method", translate("Encrypt Method"))
 for _, v in ipairs(encrypt_methods) do o:value(v) end

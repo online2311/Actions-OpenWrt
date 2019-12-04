@@ -30,9 +30,7 @@ function index()
 	entry({"admin", "services", "shadowsocksr", "check"}, call("check_status"))
 	entry({"admin", "services", "shadowsocksr", "refresh"}, call("refresh_data"))
 	entry({"admin", "services", "shadowsocksr", "checkport"}, call("check_port"))
-	
-	entry({"admin", "services", "shadowsocksr", "log"},form("shadowsocksr/log"),_("Log"), 80).leaf = true
-	
+		
 	entry({"admin", "services", "shadowsocksr","run"},call("act_status")).leaf=true
 	
 	entry({"admin", "services", "shadowsocksr", "ping"}, call("act_ping")).leaf=true
