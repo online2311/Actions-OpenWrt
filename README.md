@@ -5,4 +5,4 @@
 [![GitHub Forks](https://img.shields.io/github/forks/online2311/Actions-SmartRouter.svg?style=flat-square&label=Forks)](https://github.com/online2311/Actions-SmartRouter/fork)
 ## License
 
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE) © P3TERX
+[MIT](https://github.com/online2311/Actions-SmartRouter/blob/master/LICENSE) © SmartRouter
