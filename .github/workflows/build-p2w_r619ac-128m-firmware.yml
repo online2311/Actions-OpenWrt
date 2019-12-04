@@ -5,7 +5,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: build-p2w_r619ac-128m-firmware
 
 on: 
   release:
